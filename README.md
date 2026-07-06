@@ -1,82 +1,98 @@
-# 💡 ESP32 WiFi Lamp Control
+# 💡 Kontrol Lampu ESP32 via Web
 
-Simple ESP32 project to control **3 LEDs** from a web browser using
-**Arduino WebServer**, **HTML**, and **JavaScript Fetch API**.
-
-------------------------------------------------------------------------
-
-## ✨ Features
-
--   🌐 ESP32 creates its own WiFi Access Point.
--   💻 Control LEDs directly from any web browser.
--   💡 Controls 3 LEDs (GPIO 4, GPIO 16, GPIO 17).
--   🔄 Buttons automatically toggle between **Hidupin** and **Matiin**.
--   ⚡ Uses `fetch()` so the page doesn't refresh.
+Project sederhana untuk mengontrol **3 lampu LED** menggunakan **ESP32**
+melalui browser menggunakan **HTML**, **JavaScript**, dan **WebServer
+Arduino**.
 
 ------------------------------------------------------------------------
 
-## 🔌 Wiring Diagram
+## ✨ Fitur
 
-![ESP32 Wiring Diagram](assets/foto.jpg)
+-   🌐 ESP32 membuat WiFi Access Point sendiri.
+-   💻 Kontrol lampu langsung dari browser.
+-   💡 Mengontrol 3 lampu (GPIO 4, GPIO 16, GPIO 17).
+-   🔄 Tombol otomatis berubah **Hidupin** ↔ **Matiin**.
+-   ⚡ Menggunakan `fetch()` sehingga halaman tidak perlu dimuat ulang.
 
 ------------------------------------------------------------------------
 
-## 🛠 Hardware
+## 🔌 Rangkaian
+
+![Rangkaian ESP32](assets/foto.jpg)
+
+------------------------------------------------------------------------
+
+## 🛠 Perangkat yang Digunakan
 
 -   ESP32 DevKit
--   3× LED
--   3× 220Ω Resistor
+-   3 LED
+-   3 Resistor 220Ω
 -   Breadboard
--   Jumper Wires
+-   Kabel Jumper
 
 ------------------------------------------------------------------------
 
-## 📍 GPIO Mapping
+## 📍 Pin GPIO
 
-      LED  GPIO
-  ------- ------
-    LED 1   4
-    LED 2   16
-    LED 3   17
+  Lampu      GPIO
+  --------- ------
+  Lampu 1     4
+  Lampu 2     16
+  Lampu 3     17
 
 ------------------------------------------------------------------------
 
-## 🚀 Getting Started
+## 🚀 Cara Menggunakan
 
-1.  Open the project in Arduino IDE.
-2.  Upload the sketch to your ESP32.
-3.  Connect to the WiFi:
+1.  Buka project menggunakan Arduino IDE.
+2.  Upload sketch ke ESP32.
+3.  Sambungkan perangkat ke WiFi berikut:
 
 ``` text
-SSID: wifi lampu
-Password: (empty)
+SSID     : wifi lampu
+Password : (kosong)
 ```
 
-4.  Open your browser:
+4.  Buka browser lalu akses:
 
 ``` text
 http://192.168.4.1
 ```
 
-5.  Click the buttons to control each LED.
+5.  Tekan tombol **Hidupin** atau **Matiin** untuk mengontrol lampu.
 
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+## 📂 Struktur Project
 
 ``` text
 ESP32-WiFi-Lamp-Control/
 ├── assets/
 │   └── foto.jpg
-├── ESP32_WiFi_Lamp_Control.ino
+├── main.ino
 ├── README.md
 └── LICENSE
 ```
 
 ------------------------------------------------------------------------
 
-## 📜 License
+## 📚 Teknologi
 
-This project is licensed under the MIT License.
+-   ESP32
+-   Arduino IDE
+-   HTML
+-   JavaScript (Fetch API)
+-   WebServer.h
 
-If this project helped you, consider giving it a ⭐ on GitHub!
+------------------------------------------------------------------------
+
+## 📜 Lisensi
+
+Project ini menggunakan lisensi **MIT**.
+
+Silakan digunakan, dipelajari, maupun dimodifikasi sesuai kebutuhan.
+
+------------------------------------------------------------------------
+
+⭐ Jika project ini bermanfaat, jangan lupa berikan **Star** pada
+repository ini.
